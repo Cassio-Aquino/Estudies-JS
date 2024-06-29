@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Pixelify sans", sans-serif;
+overflow: hidden;
+}
+
+main{
+padding: 30px;
+user-select: none;
+background-color:#0f380f;
+}
+
+header>span{
+font-size: 0.85rem;
+font-weight: 700;
+color:#cadc9f;
+letter-spacing: 0.02rem;
+}
+
+header > h1{
+color: #cadc9f;
+font-size: 2rem;
+font-weight: 600;
+margin-top: 5px;
+}
+
+.columns{
+    display: flex;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.column{
+    width: 100%;
+    background-color: #8bac0f;
+    height: 100dvh;
+    border-radius: px;
+    border: 5px 5px #0000;
+}
+
+.column__title{
+    color: #cadc9f;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 20px;
+}
+
+.column__cards{
+    padding: 4px;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.card{
+width: 100%;
+min-height: 70px;
+background-color: #0f380f;
+border-radius: 0px;
+border: 1px solid #cadc9f;
+box-shadow: 2px 2px 0px #0f380f;
+padding: 12px 14px;
+font-size: 0.9rem;
+font-weight: 500;
+color: #cadc9f;
+text-align: center;
+margin-bottom: 6px;
+}
+
+.column--highlight{
+    background-color: #0f380f;
+    border: 2px solid #cadc9f;
+}
