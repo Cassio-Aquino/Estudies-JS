@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap');
+
+*{
+    font-family: "Modern Antiqua", serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background: url(https://i.pinimg.com/originals/c1/fc/9d/c1fc9d7f6ae08d56f2b84e81799790a5.gif);
+    background-size: cover;
+    background-repeat:no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top {
+    position: absolute;
+    top: 30%;
+    color: #fff;
+    font-size: 4.5vh;
+    text-shadow: 5px 2px 10px black
+}
+
+.clock {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 25%;
+    width: 60%;
+    background: #00000052;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.6);
+    min-width: auto;
+    min-height: auto;
+}
+
+
+.clock div{
+    min-height: 50px;
+    min-width: 30px;
+    height: 70%;
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: rgba(145, 149, 151, 0.4);
+    box-shadow: 5px 5px 15px rgb(172, 172, 172);
+    border-radius: 0;
+    letter-spacing: 3px;
+}
+
+.clock span{
+    font-weight: bolder;
+    font-size: clamp(20px, 10vw, 55px);
+    
+}
+
+.clock span.tempo{
+    margin-top: 12px;
+    font-size: clamp(10px, 3vw, 45px);
+}
