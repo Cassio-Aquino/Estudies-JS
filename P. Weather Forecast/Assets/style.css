@@ -63,3 +63,10 @@ body{
     margin-top: 12px;
     font-size: clamp(10px, 3vw, 45px);
 }
+
+.audio{
+    position:absolute;
+    bottom: 100px;
+    opacity: 50%;
+    display: flex;
+}
