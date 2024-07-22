@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+*{
+   font-family: "Pixelify Sans", sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(https://i.pinimg.com/originals/99/8e/05/998e055aba57c24138220937cc5166ab.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo{
+    max-width: 120vh;
+    position: absolute;
+    top: 15%;
+}
+
+.container-input{
+    max-width: 480px;
+    margin: 14px 0;
+}
+
+.container-input span{
+    color: white;
+    font-size: 22px;
+}
+
+[type="range"]::-webkit-slider-thumb{
+    border-radius: 20px;
+    appearance: none;
+    display: block;
+    width: 10px;
+    height: 12px;
+    background-color: #78007c;
+}
+
+.slider{
+    border: #fff 2.5px solid;
+    appearance: none;
+   -webkit-appearance: none;
+   width: 100%;
+   border-radius: 10px;
+   background: #f49df7;
+   height: 18px;
+   outline: none;
+   margin-top: 8px;
+   opacity: 0.5;
+}
+
+.button-cta{
+    height: 40px;
+    background-color: #f49df7;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 40px;
+    color: #fff;
+    letter-spacing: 3px;
+    font-weight:lighter;
+    font-size: 18px;
+}
+
+.container-password{
+    max-width: 480px;
+    margin: 14px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.title{
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    
+}
+
+.password{
+    height: 60px;
+    background-color: rgba(244, 157, 247, 0.2);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 25px;
+    border: 1px solid #313131;
+    transition: transform 0.5s;
+    
+}
+
+.password:hover{
+    transform: scale(1.05);
+}
+
+.tooltip{
+    letter-spacing: 3px;
+    color: #fff;
+    position: relative;
+    top: 20px;
+    padding: 6px 9px;
+    background: #f49df7 ;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.hide{
+    display: none;
+}
+
+.container-password:hover .tooltip{
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+}
+
+span #valor{
+    color: #9146e7;
+    position:relative;
+    left: 37.5%;
+    justify-content: center;
+    font-size: 30px;
+}
+
+span.password-size{
+    color: #f49df7;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
