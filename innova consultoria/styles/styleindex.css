@@ -1,0 +1,220 @@
+body{
+    background-color: rgb(34, 34, 34);
+    color: white;
+    font-family: poppinsregular;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    z-index: 1;
+    top: 0;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#tittle{
+    flex-direction: column;
+    line-height: 10px;
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+}
+
+a{
+    color: white;
+}
+
+h1{
+    font-weight: 200;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+h2{
+    font-size: 56px;
+    line-height: 10px;
+    font-family: poppinsmedium;
+}
+
+h3{
+    font-size: 36px;
+    line-height: 10px;
+    font-family: poppinsmedium;
+}
+
+h4{
+    font-size: 24px;
+}
+
+span{
+   color: rgb(132, 14, 201);
+   text-shadow: rgb(132, 14, 201) 1px 0 10px;
+}
+
+p{
+    font-size: 20px;
+    line-height: 20px;
+    max-width: 500px;
+    font-family: poppinslight;
+}
+
+#mobile-marketing-animate{
+    position: relative;
+    width: 200%;
+    left: 85%;
+}
+
+a:hover{
+    color: rgb(132, 14, 201);
+    transition: 0.5s all;
+}
+
+#register-btn{
+    border: 2px solid rgb(132, 14, 201);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#register-btn:hover{
+    background-color: rgb(132, 14, 201);
+    color: white;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+form [type="submit"]{
+    height: 50px;
+    width: 50%;
+    background-color: rgb(132, 14, 201);
+    color: white;
+    font-weight: bold;
+}
+
+form [type="submit"]:hover{
+    cursor: pointer;
+}
+
+
+input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    font-size: 15px;
+}
+
+.email{
+height: 90px;
+}
+
+.space{
+    padding-top: 15vw;
+    padding-right: 0;
+}
+
+.about{
+    color: rgb(132, 14, 201);
+    text-shadow: rgb(132, 14, 201) 1px 0 10px;
+    font-size: 56px;
+    line-height: 10px;
+}
+
+.regua {
+    width: 56%;
+    top: 15vh;
+    position:relative;
+    display:block;
+    margin:10px 0;
+    height:2px;
+    border-radius: 10px;
+    background-color: rgb(132, 14, 201);
+    justify-content: left;
+}
+
+#aboutus{
+    margin-bottom: 2px;
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+    max-width: 500px;
+    font-family: poppinslight;
+}
+
+#client-logo{
+    position:relative;
+    width: 200%;
+    top: 10%;
+    left: 90%;
+}
+
+#topline{
+    position:relative;
+    overflow: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(34, 34, 34);
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(132, 14, 201);
+    border-radius: 50px;
+    border: 3px solid rgb(34, 34, 34);
+  }
+
+  .line{
+    width: 56%;
+    top: 15vh;
+    position:fixed;
+    display:block;
+    margin:10px 0;
+    height:2px;
+    border-radius: 10px;
+    background-color: rgb(132, 14, 201);
+    justify-content: left;
+  }
+
+  #verdetech-logo{
+    position:absolute;
+    width: 25%;
+    left: 65%;
+    top:95%;
+  }
+
+  #syntho-logo{
+    position:absolute;
+    width: 25%;
+    left: 65%;
+    top:165%;
+  }
+
+  #bleepo-logo{
+    position:absolute;
+    width: 25%;
+    left: 65%;
+    top:215%;
+  }
