@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap');
+
+*{
+    font-family: "Sedan", serif;
+}
+
+body{
+    background-color: rgb(34, 34, 34);
+    color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header{
+    z-index: 1;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -32vh;
+    margin-right: -32vh;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+    font-weight: 200px;
+    font-size: 20px;
+    margin-right: 2vh;
+}
+
+a{
+    color: white;
+}
+
+#register-btn{
+    border: 2px solid rgb(132, 14, 201);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#register-btn:hover{
+    background-color: rgb(132, 14, 201);
+    color: white;
+    transition: 0.5s all;
+}
+
+h1{
+    font-size: 36px;
+}
+
+h2{
+    font-size: 26px;
+    color: rgb(132, 14, 201);
+    right: 20%;
+    position: relative;
+    opacity: 75%;
+    margin-top: 0px;
+}
+
+span{
+    font-size: 60px;
+    right: 20%;
+    position: relative;
+    color: rgb(132, 14, 201);
+    text-shadow: rgb(132, 14, 201) 1px 0 10px;
+ }
+
+ #office{
+    position: absolute;
+    width: 30vw;
+    left: 60%;
+    top: 25%;
+ }
+
+ .regua{
+    width: 90vw;
+    position: block;
+    display: block;
+    height: 1px;
+    border-radius: 10px;
+    background-color: rgb(132, 14, 201);
+    justify-content: left;
+    margin-left: 0px;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.carrosel {
+    box-shadow: 2px 2px 4px rgb(132, 14, 201);
+    overflow: hidden;
+    height: 500px;
+    max-width:350px;
+    border-radius: 5px;
+    margin: 0 auto;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    transition: transform 1s ease-in-out;
+    transform: translateX(0);
+  }
+  
+  .container img {
+    width: 500px; 
+    height: 500px;
+  }
+  
+#text{
+    font-size: 17px;
+    text-align: center;
+    font-weight: 100;
+}
+
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+}
+
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 4px solid rgb(132, 14, 201)
+}
+
+.card{
+    border-radius: 25px;
+    background-color: #fff;
+    width: 320px;
+}
+
+.image-content, .card-content{
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image-content{
+ row-gap: 5px;
+ position: relative;
+ padding: 25px 0;
+
+}
+
+.overlay::before,
+.overlay::after{
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(132, 14, 201);
+    right: 0;
+    bottom: -40px;
+}
+
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: white;
+}
+
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(132, 14, 201);
+    left: 0;
+    top: 0;
+    border-radius: 25px 25px 0 25px;
+}
+
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+    background-color: rgb(34, 34, 34);
+    padding: 40px 0;
+}
+
+.slide-content{
+    margin: 0 40px;
+}
+
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}
+
+.description{
+    font-size: 14px;
+    color: black;
+    text-align: center;
+}
+
+.button{
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 16px;
+    background: rgb(132, 14, 201);
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover{
+    background: rgb(117, 8, 180);
+}
+
+form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    left: 5%;
+}
+
+form [type="submit"]{
+    height: 50px;
+    width: 35%;
+    background-color: rgb(132, 14, 201);
+    color: white;
+    font-weight: bold;
+}
+
+form [type="submit"]:hover{
+    cursor: pointer;
+}
+
+input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    font-size: 15px;
+}
+
+.email{
+    height: 90px;
+    }
