@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hi+Melody&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Autour+One&display=swap');
+
+
+body{
+    background-color: white;
+}
+
+html{
+    scroll-behavior:smooth;
+    scrollbar-width: none;
+}
+
+header{
+    width: 100%;
+    height: 7%;
+    display:flex;
+    position: fixed;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: 'Autour One';
+    border-bottom: 2px solid black;
+    transition: all 0.5s;
+    backdrop-filter: blur(20px);
+    z-index: 2;
+}
+
+.header-scrolled{
+    height: 5%;
+    background-color: white;
+}
+
+.header-text{
+    cursor: pointer;
+}
+
+.header-text:hover{
+    font-size: 1.1rem;
+    transition: all 0.1s;
+}
+
+li{
+    list-style: none;
+    transition: all 0.1s;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+li:hover{
+    font-size: 120%;
+}
+
+.top-text{
+    font-family: 'Autour One';
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.sub-text{
+    padding-top: 10px;
+    font-size: 0.7rem;
+    font-family: 'Autour One';
+    text-align: center;
+}
+
+.poetry{
+    font-family: 'Autour One';
+    font-size: 0.9rem;
+    text-align: center;
+    padding-bottom: 20px;
+    opacity: 0;
+}
+
+.poetry.visible{
+    opacity: 1;
+    animation: slideIn 0.8s ease-in-out forwards;
+}
+
+#countdown{
+    font-weight: 100;
+    font-family: 'Autour One';
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.orion{
+    width: 2.5rem;
+}
+
+.orion2{
+    transform: rotateY(180deg);
+}
+
+.reveal{
+    width: 400px;
+    height: 550px;
+    border: 5px black solid;
+    opacity: 0;
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.reveal.visible{
+    width: 400px;
+    height: 450px;
+    border: 5px black solid;
+    animation: slideIn 0.8s ease forwards;
+    display: inline-block;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%); /* Começa fora da tela, acima */
+        opacity: 0; /* Começa invisível */
+    }
+    100% {
+        transform: translateY(0); /* Move para a posição original */
+        opacity: 1; /* Torna visível */
+    }
+}
+
+.container{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.reveal-text{
+    display: flex;
+    text-align: center;
+    font-family: 'Autour One';
+    font-size: 30px;
+    opacity: 0;
+}
+
+.reveal-text.visible{
+    display: flex;
+    opacity: 1;
+    animation: slideIn 0.8s ease-in-out forwards;
+}
+
+.playlist{
+width: 50%;
+height: 67vh;
+border-radius: 15px;
+opacity: 0;
+}
+
+.playlist.visible{
+    opacity: 1;
+    animation: slideIn 0.8s ease-in-out forwards;
+
+}
+
+.videoctn{
+    display: grid;
+     place-items: center; 
+     height: 100vh;
+}
+
+.carousel{
+    border-radius: 15%;
+    border: 2px solid black;
+    position: relative;
+    max-width: 36%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.carousel.visible{
+    opacity: 1;
+    animation: slideIn 0.8s ease-in-out forwards;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    border-radius: 15%;
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}

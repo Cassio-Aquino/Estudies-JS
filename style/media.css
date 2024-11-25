@@ -1,0 +1,53 @@
+@media (max-width: 768px) {
+    header{
+        position: relative;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 25vh;
+    }
+    
+.orion{
+    display: none;
+}
+
+header>a{
+    padding-bottom: 0;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    
+}
+
+#countdown{
+    display: flex;
+    position: relative;
+    left: 50%;
+    transform:translateX(-50%);
+    align-self: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.reveal.visible{
+    height: 190px;
+
+}
+
+.reveal-text{
+    font-size:14px;
+}
+
+.playlist{
+    width: 70%;
+    height: 65%;
+}
+
+.carousel{
+
+    max-width: 100%;
+
+}
+
+}
