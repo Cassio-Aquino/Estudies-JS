@@ -1,0 +1,224 @@
+@import url('https://fonts.cdnfonts.com/css/graffiti-font');
+
+@font-face {
+    font-family: 'Rashfeng';
+    src: url(/fonts/Rashfeng.ttf) format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+*{
+    border: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #1e1e1e;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 7vh;
+    width: 99.22w;
+    background-color: rgb(41, 41, 41);
+    border-bottom: 2.5px white solid;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: relative;
+}
+
+.toptext{
+    text-decoration: none;
+    color: white;
+    font-family: 'Graffiti font', sans-serif;
+    font-size: 20px;
+    text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
+}
+
+.toptext:hover{
+    color: #7e340f;
+    transition: ease-in-out 0.5s;
+}
+
+body>header{
+    color: white;
+}
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 colunas de tamanho igual */
+      gap: 10px; /* espaço entre as imagens */
+      max-width: 800px;
+      margin: 0 auto; /* centraliza o grid na horizontal */
+    }
+
+.imagem-grande {
+    z-index: -1;
+    position: absolute;
+    top: -20px;
+    width: 99.22vw;
+    height: 30vh;
+    object-fit: cover; /* Mantém o preenchimento e evita distorção */
+    display: block;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+
+}
+
+.pfp{
+    display: flex;
+    justify-content: center;
+    margin-top: 22%;
+}
+
+.pfp-image{
+    height: 130px;
+    width: 130px;
+    display: flex;
+    border-radius: 100%;
+    border: solid 2.5px white;
+    box-shadow: -5px -5px 5px rgb(0, 0, 0);
+}
+
+.profile-name{
+    text-align: center;
+    font-family: 'Graffiti font', sans-serif;
+    color: white;
+}
+
+.biography{
+    font-weight: 500;
+    font-family: 'Rashfeng';
+    font-size: 1.8em;
+    color: white;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.sociais{
+    text-align: center;
+    align-items: center;
+}
+
+.midia-social{
+    height: 5.5vh;
+    width: 55vw;
+    background-color: rgb(41, 41, 41);
+    border-radius: 20px;
+    border: white 2px solid;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+
+.midia-social>a{
+    font-family: 'Graffiti font', sans-serif;
+    text-decoration: none;
+    color: #965534;
+    transition: ease-in-out 0.5s;
+}
+
+.midia-social:hover>a{
+    color: white;
+}
+
+.midia-social:hover{
+    box-shadow: -5px 5px 5px rgb(0, 0, 0);
+    transition: ease-in-out 0.5s;
+    background-color: #7e340f;
+    text-decoration: none;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 20vh;
+    width: 99.22vw;
+    background-color: rgb(41, 41, 41);
+    border-top: 2.5px white solid;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: relative;
+}
+
+.footer-text{
+    font-family: 'Graffiti font', sans-serif;
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.footer-text>a{
+    font-size: 20px;
+    font-family: 'Graffiti font', sans-serif;
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .toptext {
+        font-size: 28px;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(4, 1fr); /* Mais colunas em telas grandes */
+        max-width: 1000px;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .imagem-grande {
+        align-items: center;
+        height: 40vh; /* aumenta a imagem de destaque */
+    }
+
+    .pfp {
+        margin-top: 15%;
+    }
+
+    .pfp-image {
+        height: 180px;
+        width: 180px;
+        box-shadow: -8px -8px 10px rgb(0, 0, 0);
+    }
+
+    .profile-name {
+        font-size: 2.2em;
+    }
+
+    .biography {
+        font-size: 2.2em;
+        padding: 0 50px;
+    }
+
+    .midia-social {
+        width: 30vw; /* Menor largura já que há mais espaço */
+        height: 6vh;
+        font-size: 1.2em;
+    }
+
+    .midia-social > a {
+        line-height: 6vh;
+        display: inline-block;
+        width: 100%;
+    }
+
+    footer {
+        height: 15vh;
+    }
+
+    .footer-text, .footer-text > a {
+        font-size: 1.4em;
+    }
+}
