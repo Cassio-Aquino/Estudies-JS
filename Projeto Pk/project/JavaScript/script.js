@@ -1,7 +1,7 @@
 const musicas = [
-  { nome: "2Pac - Run Tha Streetz", arquivo: "musicas/musica1.mp3" },
-  { nome: "Cartola - Preciso me encontrar", arquivo: "musicas/musica2.mp3" },
-  { nome: "Racionais - Capitulo 2 Versiculo 3", arquivo: "musicas/musica3.mp3" }
+  { nome: "2Pac - Run Tha Streetz", arquivo: "/musica1.mp3" },
+  { nome: "Cartola - Preciso me encontrar", arquivo: "/musica2.mp3" },
+  { nome: "Racionais - Capitulo 2 Versiculo 3", arquivo: "/musica3.mp3" }
 ];
 
 let index = 0;
